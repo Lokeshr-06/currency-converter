@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(to right, lightgreen, lightpink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .converter-container {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgb(22, 21, 19);
+    text-align: center;
+    width: 350px;
+    height: 400px;
+  }
+  h1{
+    animation: ColorChange 10s ease 0.1s infinite;
+    margin-bottom: 10px;
+  }
+  .converter-box {
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: #fe360e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    transition: all .8s;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  
+  button:hover {
+    filter: brightness(100px);
+    background: #0f7306;
+    box-shadow: 0px 0px 10px red;
+  }
+  
+  #result {
+    margin-top: 15px;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes ColorChange{
+    0%{color: darkseagreen;}
+    15%{color: darkturquoise;}
+    25%{color: yellow;}
+    50%{color: darkorange;}
+    75%{color: darkviolet;}
+    85%{color: deeppink;}
+    100%{color: darkkhaki;}
+  }
